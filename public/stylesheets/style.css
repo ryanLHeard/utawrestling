@@ -1,0 +1,50 @@
+body{
+  background: white;
+}
+
+aside{
+  width: 25%;
+  float: left;
+}
+
+.colDecor{
+  background: white;
+  margin-top: 5px;
+  -webkit-box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.7);
+  -moz-box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.7);
+  box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.7);
+  padding: 2%;
+}
+
+.main{
+  float: left;
+  width: 60%;
+  margin-right: 15%;
+}
+
+.navbar{
+  height: 3%;
+}
+.navbar-inverse{
+  background: #404042;
+}
+
+.white{
+  background: rgb(255, 255, 255);
+}
+
+footer{
+  background: #404042;
+  color: white;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  pading: auto;
+  padding-top: 2%;
+}
+
+th{
+  background: #cdab6d;
+  border-color:  #cdab6d;
+}
