@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var wrestlers = require('./routes/wrestlers');
 var about = require('./routes/about');
 var schedule = require('./routes/schedule');
+var port = process.env.PORT || 3000;
 
 
 var app = express();
@@ -61,5 +62,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.listen(3000);
+app.listen(port);
 module.exports = app;
