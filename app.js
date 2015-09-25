@@ -56,6 +56,7 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+console.log("Listening on "+port);
 
 app.listen(port);
 module.exports = app;
