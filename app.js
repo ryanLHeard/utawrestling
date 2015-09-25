@@ -5,11 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var wrestlers = require('./routes/wrestlers');
-var about = require('./routes/about');
-var schedule = require('./routes/schedule');
-
+var port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -25,10 +21,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
-app.use('/wrestlers', wrestlers);
-app.use('/about', about);
-app.use('/schedule', schedule);
+app.use('/', require('./routes/index'));
+app.use('/wrestlers', require('./routes/wrestlers'));
+app.use('/about', require('./routes/about'));
+app.use('/schedule', require('./routes/schedule'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -61,6 +57,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
-
-
+app.listen(port);
 module.exports = app;
