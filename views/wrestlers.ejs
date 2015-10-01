@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <% include templates/head.ejs %>
 </head>
@@ -9,12 +9,23 @@
         <div  class="colDecor">
             <legend><h3>Active Wrestlers</h3></legend>
             <legend><h3>Former Wrestlers</h3></legend>
-            <ul>
-                <li>First</li>
+            <table class="table table-bordered table-striped table-hover">
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Weight</th>
+                    <th>Major</th>
+
+                </tr>
                 <% people.forEach(function(person){%>
-                    <li><%= person.firstName %></li>
+                    <tr>
+                        <td><%= person.firstName + " "+person.lastName %></td>
+                        <td><%= person.role %></td>
+                        <td><%= person.highSchool %></td>
+                        <td><%= person.major %></td>
+                    </tr>
                 <%}); %>
-            </ul>
+            </table>
 
         </div>
     </div>
