@@ -9,6 +9,13 @@
         <div  class="colDecor">
             <legend><h3>Active Wrestlers</h3></legend>
             <legend><h3>Former Wrestlers</h3></legend>
+            <ul>
+                <li>First</li>
+                <% people.forEach(function(person){%>
+                    <li><%= person.firstName %></li>
+                <%}); %>
+            </ul>
+
         </div>
     </div>
 </body>
