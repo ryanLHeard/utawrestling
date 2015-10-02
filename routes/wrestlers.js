@@ -8,7 +8,7 @@ db.collection('wrestlers').find().toArray(function(err, result) {
 
   wrestler =  result;
   //console.log(wrestler)
-})
+});
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('wrestlers', { title: 'UTA Wrestlers', people: wrestler });
