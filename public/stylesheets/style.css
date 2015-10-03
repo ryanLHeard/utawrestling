@@ -29,6 +29,14 @@ aside{
   background: #404042;
 }
 
+.table-striped>tbody>tr:nth-child(odd)>td{
+  background-color: #cec7c8;
+}
+
+.table-striped>tbody>tr:nth-child(2n+2)>td,
+.table-striped>tbody>tr:nth-child(2n+2)>th {
+  background-color: white;
+}
 .white{
   background: rgb(255, 255, 255);
 }

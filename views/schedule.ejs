@@ -8,6 +8,31 @@
     <% include templates/header.ejs %>
     <div  class="colDecor">
         <legend><h3>2015 Schedule</h3></legend>
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Host</th>
+                <th>Location</th>
+                <th>Time</th>
+                <th>Type</th>
+                <th>Result</th>
+            </tr>
+            <% tournaments.forEach(function(tourney){%>
+                <tr>
+                    <td><%= tourney.date %></td>
+                    <td><%= tourney.name %></td>
+                    <td><%= tourney.date %></td>
+                    <td><%= tourney.host %></td>
+                    <td><%= tourney.time %></td>
+                    <td><%= tourney.type %></td>
+                    <td><%= tourney.result %></td>
+
+
+
+                </tr>
+            <%}) %>
+        </table>
     </div>
 </div>
 </body>

@@ -11,9 +11,30 @@
         <p>Welcome to the University of Texas at Arlington Wrestling Club page. </p>
       </div>
       <aside class="colDecor">
-        <div>Feed</div>
-        <p>This is where the twitter facebook feed would go.</p>
+        <div class="fb-page"
+             data-href="https://www.facebook.com/UTAWrestling?fref=ts"
+             data-small-header="false"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="true"
+             data-show-posts="true">
+          <div class="fb-xfbml-parse-ignore">
+            <blockquote cite="https://www.facebook.com/UTAWrestling?fref=ts">
+              <a href="https://www.facebook.com/UTAWrestling?fref=ts">UTA Wrestling</a>
+            </blockquote>
+          </div>
+        </div>
       </aside>
     </div>
   </body>
+  <div id="fb-root"></div>
+
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
 </html>
