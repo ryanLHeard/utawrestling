@@ -10,16 +10,34 @@ aside{
 .colDecor{
   background: white;
   margin-top: 5px;
-  -webkit-box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.7);
-  -moz-box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.7);
-  box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 2px 3px 20px 1px #252772;
+  -moz-box-shadow: 2px 3px 20px 1px #252772;
+  box-shadow: 2px 3px 20px 1px #252772;
   padding: 2%;
+}
+
+div#header {
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.generalPicture {
+  max-width: 125px !important;
+  max-height: 125px !important;
+  padding: 2%;
+  background-color: white
 }
 
 .main{
   float: left;
-  width: 60%;
-  margin-right: 15%;
+  width: 70%;
+  margin-right: 5%;
+
+}
+
+.mainBanner > img{
+  padding-left: 5%;
 }
 
 .navbar{
@@ -41,6 +59,10 @@ aside{
   background: rgb(255, 255, 255);
 }
 
+aside.colDecor {
+  padding: 0px;
+}
+
 footer{
   background: #404042;
   color: white;
@@ -48,8 +70,9 @@ footer{
   width: 100%;
   position: fixed;
   bottom: 0px;
-  pading: auto;
+  padding: auto;
   padding-top: 2%;
+  margin-top: 2%;
 }
 
 th{
