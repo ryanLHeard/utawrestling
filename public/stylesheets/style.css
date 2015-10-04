@@ -1,5 +1,13 @@
-body{
-  background: white;
+html{
+  height: 150%;
+  background: -webkit-linear-gradient(#ffa700, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ffa700, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ffa700, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffa700, white); /* Standard syntax (must be last) */
+  background-repeat: no-repeat;
+}
+body {
+  background-color : transparent;
 }
 
 aside{
